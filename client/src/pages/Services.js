@@ -25,13 +25,17 @@ const Services = () => {
             setStyle({...style, [e.target.name]: e.target.value, description:'Cut description'})
             console.log(style, "Style")
             setPageState(true)
+        }else if(e.target.value === 'Foiling'){
+            setStyle({...style, [e.target.name]: e.target.value, description:'Foiling description'})
+            console.log(style, "Style")
+            setPageState(true)
         }
     }
     if(pageState === false){
         return(
             <Container fluid>
                 <br></br>
-                <Card>
+                <Card style={{ marginLeft: '10%', marginRight: '10%', width: '80%'}}>
                     <br></br>
                     <Row style={{textDecoration: 'underline'}}>
                         <Card.Title>Services</Card.Title>
@@ -42,6 +46,10 @@ const Services = () => {
                             name='style'
                             value='Baylage' 
                             className="btn btn-outline-light"
+                            style={{
+                                marginLeft: '20%',
+                                marginRight: '20%',
+                                width: '60%'}}
                             onClick={(e) => formStyle(e)}
                             > Baylage</button>
                     </Row>
@@ -51,6 +59,10 @@ const Services = () => {
                             name='style'
                             value='Toning' 
                             className="btn btn-outline-light"
+                            style={{
+                                marginLeft: '20%',
+                                marginRight: '20%',
+                                width: '60%'}}
                             onClick={(e) => formStyle(e)}
                             >Toning</button>
                     </Row>
@@ -60,6 +72,10 @@ const Services = () => {
                             name='style'
                             value='Styling' 
                             className="btn btn-outline-light"
+                            style={{
+                                marginLeft: '20%',
+                                marginRight: '20%',
+                                width: '60%'}}
                             onClick={(e) => formStyle(e)}
                             >Styling</button>
                     </Row>
@@ -69,8 +85,25 @@ const Services = () => {
                             name='style'
                             value='Cuts' 
                             className="btn btn-outline-light"
+                            style={{
+                                marginLeft: '20%',
+                                marginRight: '20%',
+                                width: '60%'}}
                             onClick={(e) => formStyle(e)}
                             >Hair Cuts</button>
+                    </Row>
+                    <br></br>
+                    <Row>
+                        <button
+                            name='style'
+                            value='Foiling' 
+                            className="btn btn-outline-light"
+                            style={{
+                                marginLeft: '20%',
+                                marginRight: '20%',
+                                width: '60%'}}
+                            onClick={(e) => formStyle(e)}
+                            >Foiling</button>
                     </Row>
                     <br></br>
                 </Card>

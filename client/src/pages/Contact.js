@@ -4,12 +4,12 @@ const Contact = () => {
     return(
         <Container fluid>
             <br></br>
-            <Card>
+            <Card style={{marginLeft: '10%', marginRight: '10%', width: '80%'}}>
             <br></br>
                 <Row>
                     <Card.Title style={{textDecoration: 'underline'}}>Contact Information</Card.Title>
                     <br></br>
-                    <button className="btn btn-outline-dark"
+                    <button className="btn btn-outline-light"
                             style={{width: '60%', marginRight: '20%', marginLeft: '20%'}}>Download Resume</button>
                 </Row>
                 <br></br>
