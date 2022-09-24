@@ -1,7 +1,7 @@
 # Stylist Portfolio
 - Just a basic portfolio page for Meredith Swanson's Cosmotology Work.
 
-
+[EmailJS-Link](https://blog.devgenius.io/set-up-emailjs-in-react-app-from-scratch-42e669efc22a)      
 ### Technologies Used:
 * React
 * Bootstrap

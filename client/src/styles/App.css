@@ -11,3 +11,13 @@ div.card{
     text-align: center;
     background-color: rgba(113, 112, 112, 0.716);
 }
+
+p{
+    color: white;
+}
+
+img#main-img{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
