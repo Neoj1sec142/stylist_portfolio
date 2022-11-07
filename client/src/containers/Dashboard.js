@@ -14,12 +14,11 @@ const Dashboard = ({load_posts, all_posts}) => {
                 <div className='row mt-3 text-center card-header'>
                     Meredith's Portfolio
                 </div>
-                <div className='row d-flex flex-direction-column ovo'>
+                <div className='card row ovo'>
                     {all_posts.map(post => (
-                    <div key={post.id}>
-                    <PostCard post={post} />
-                    </div>
+                    <PostCard post={post} key={post.id}/>
                     ))}
+                    
                 </div>
             </div>
         )
