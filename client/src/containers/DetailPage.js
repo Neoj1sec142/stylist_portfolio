@@ -7,9 +7,20 @@ const DetailPage = ({post, load_post_by_id}) => {
     useEffect(() => {
         load_post_by_id(id)
     },[])
-    console.log(post, "POST ON PAGE")
+    
+    const {date_added, description, img, techniques, title} = post;
     return(
-        <div></div>
+        <div className='container-fluid'>
+            <div className='card mt-3 text-center'>
+                <img className='img-thumbnail sqsh' src={img} alt=''/>
+                <p className='card-header'>{title} | {date_added}</p>
+                <hr className='divider sqsh' />
+                <p className='card-text'>{description}</p>
+                <p className='card-text'>Techniques: {techniques}</p>
+                <hr className='divider sqsh' />
+                <a href='/portfolio' className='btn btn-danger'>Back</a>
+            </div>
+        </div>
     )
 }
 

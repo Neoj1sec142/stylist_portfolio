@@ -11,10 +11,10 @@ const Dashboard = ({load_posts, all_posts}) => {
     if(all_posts.length){
         return(
             <div className='conatiner-fluid'>
-                <div className='row mt-3'>
-                    User Profile Row
+                <div className='row mt-3 text-center card-header'>
+                    Meredith's Portfolio
                 </div>
-                <div className='row d-flex flex-direction-column'>
+                <div className='row d-flex flex-direction-column ovo'>
                     {all_posts.map(post => (
                     <div key={post.id}>
                     <PostCard post={post} />
