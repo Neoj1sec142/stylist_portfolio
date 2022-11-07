@@ -8,12 +8,12 @@ import {
 
 const initialState = {
     all_posts: [],
-    post: {}
+    post: {},
 }
 
 export default function(state= initialState, action){
     const { type, payload } = action
-    switch(type){    
+    switch(type){   
         case LOAD_POST_BY_ID_SUCCESS:
             return{
                 ...state,

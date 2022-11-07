@@ -4,7 +4,11 @@
   width: 70%;
 }
 
-.nolink{
+.nolink, .nolink:hover{
   color: black;
   text-decoration: none;
+}
+.ovo{
+  overflow-x: scroll;
+  overflow-y: scroll;
 }

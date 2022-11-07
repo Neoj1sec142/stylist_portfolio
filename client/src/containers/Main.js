@@ -10,7 +10,7 @@ const Main = () => {
                 <div className='card sqsh'>
                 {/* <img src="" alt="" /> */}
                 </div>
-                <a href='/skills' className='btn btn-outline-primary'>View Meredith's Portfolio</a>
+                <a href='/portfolio' className='btn btn-outline-primary'>View Meredith's Portfolio</a>
                 <br/>
             </div>
         </div>

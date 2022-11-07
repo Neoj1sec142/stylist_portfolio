@@ -1,12 +1,12 @@
-import {GetPosts, GetPostById} from '../actions/post'
+import {GetPosts, GetPostById} from '../services/post'
 import {
     LOAD_POSTS_SUCCESS, LOAD_POSTS_FAIL,
-    LOAD_POST_BY_ID_SUCCESS, LOAD_POST_BY_ID_FAIL
+    LOAD_POST_BY_ID_SUCCESS, LOAD_POST_BY_ID_FAIL,
 } from '../types'
 
 export const load_posts = () => async dispatch => {
     try{
-        const res = GetPosts()
+        const res = await GetPosts()
         console.log(res, "ALL POST RES")
         if(res.status === 200){
             dispatch({
@@ -27,7 +27,7 @@ export const load_posts = () => async dispatch => {
 
 export const load_post_by_id = (id) => async dispatch => {
     try{
-        const res = GetPostById(id)
+        const res = await GetPostById(id)
         console.log(res, "ALL POST RES")
         if(res.status === 200){
             dispatch({
