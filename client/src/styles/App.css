@@ -1,23 +1,10 @@
-html{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 45, 45, 0.715);
-}
-div.App{
-    background-color: rgba(46, 45, 45, 0.715);
-}
-div.card{
-    color: white;
-    text-align: center;
-    background-color: rgba(113, 112, 112, 0.716);
+.sqsh{
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
 }
 
-p{
-    color: white;
-}
-
-img#main-img{
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
+.nolink{
+  color: black;
+  text-decoration: none;
 }

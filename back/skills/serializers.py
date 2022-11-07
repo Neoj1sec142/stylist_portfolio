@@ -6,6 +6,7 @@ class SkillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skill
         fields = '__all__'
+        extra_fields = ('_all__')
         
 class PostSerializer(serializers.ModelSerializer):
     
