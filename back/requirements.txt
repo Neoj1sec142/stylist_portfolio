@@ -1,1 +1,4 @@
-DATABASE_URL=postgresql-clean-07065
+django = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+pillow = "*"
