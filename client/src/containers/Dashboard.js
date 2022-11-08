@@ -14,7 +14,7 @@ const Dashboard = ({load_posts, all_posts}) => {
                 <div className='row mt-3 text-center card-header'>
                     Meredith's Portfolio
                 </div>
-                <div className='card row ovo'>
+                <div className='card row ovo stk'>
                     {all_posts.map(post => (
                     <PostCard post={post} key={post.id}/>
                     ))}

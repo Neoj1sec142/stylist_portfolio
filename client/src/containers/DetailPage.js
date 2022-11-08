@@ -11,8 +11,8 @@ const DetailPage = ({post, load_post_by_id}) => {
     const {date_added, description, img, techniques, title} = post;
     return(
         <div className='container-fluid'>
-            <div className='card mt-3 text-center'>
-                <img className='img-thumbnail sqsh' src={img} alt=''/>
+            <div className='card mt-3 text-center rl'>
+                <img className='img-thumbnail sqshy' src={img} alt=''/>
                 <p className='card-header'>{title} | {date_added}</p>
                 <hr className='divider sqsh' />
                 <p className='card-text'>{description}</p>
